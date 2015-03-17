@@ -6,5 +6,11 @@
 
 meteor-platform
 autopublish
+<<<<<<< HEAD
 insecure
 afruth:chapp
+=======
+twbs:bootstrap
+email
+iron:router
+>>>>>>> 01004c386fa2232eec500632951a1ab49324b682

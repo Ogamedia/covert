@@ -6,4 +6,6 @@
 
 meteor-platform
 autopublish
-insecure
+twbs:bootstrap
+email
+iron:router

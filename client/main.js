@@ -3,7 +3,6 @@ Template.launchPage.events({
 
 		event.preventDefault();
 		var email = event.target.email.value;
-		console.log(email);
 		document.getElementById("emailForm").reset();
 
 

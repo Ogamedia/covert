@@ -5,7 +5,10 @@ Posts.attachSchema(new SimpleSchema({
     type: String,
     label: "Post",
     optional: true,
-    max: 140
+    max: 140,
+    autoform: {
+      rows: 5
+    }
   },
 
   poster: {

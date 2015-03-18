@@ -7,7 +7,9 @@
 </template>
 
 <template name="insertPostForm">
-  {{> quickForm collection="Posts" id="insertPostForm" type="insert" template="bootstrap3-inline" label-class="sr-only"}}
+ {{#afModal class="btn btn-primary" collection="Posts" operation="insert"}}
+      Make Your Post
+{{/afModal}}
 </template>
 
 

@@ -9,9 +9,17 @@ twbs:bootstrap
 email
 iron:router
 
+<<<<<<< HEAD
 yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 fortawesome:fontawesome
 ogamedia:timer
 yogiben:autoform-modals
+=======
+reywood:iron-router-ga
+useraccounts:bootstrap
+accounts-ui
+accounts-base
+accounts-password
+>>>>>>> 49577441ebd86b75740268db163b5ddc40856806

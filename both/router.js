@@ -7,7 +7,10 @@ loadingTemplate will use a template with loading or a template
 */
 Router.configure({
 	layoutTemplate: 'layout',
-	trackPageView: true
+	trackPageView: true,
+	onBeforeAction: function(){
+		GAnalytics.pageView(this.page)
+	}
 	// notFoundTemplate: '404',
 	// loadingTemplate: 'loading'
 });

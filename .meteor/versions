@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 aldeed:autoform@4.2.2
 aldeed:collection2@2.3.2
 aldeed:simple-schema@1.3.0
-=======
 accounts-base@1.1.3
 accounts-password@1.0.6
 accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
->>>>>>> 49577441ebd86b75740268db163b5ddc40856806
 application-configuration@1.0.4
 autoupdate@1.1.5
 base64@1.0.2
@@ -50,14 +47,10 @@ meteor-platform@1.2.1
 minifiers@1.1.3
 minimongo@1.0.6
 mobile-status-bar@1.0.2
-momentjs:moment@2.8.4
 mongo@1.0.11
-<<<<<<< HEAD
 mpowaga:string-template@0.1.0
 mrt:moment@2.8.1
-=======
 npm-bcrypt@0.7.7
->>>>>>> 49577441ebd86b75740268db163b5ddc40856806
 observe-sequence@1.0.4
 ogamedia:timer@0.0.2
 ordered-dict@1.0.2

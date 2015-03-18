@@ -1,0 +1,50 @@
+<template name="event">
+	<h1>Event DETAILS</h1>
+	<h1> GO HERE</h1>
+
+	{{> insertPostForm}}
+	{{> posts}}
+</template>
+
+<template name="insertPostForm">
+ {{#afModal class="btn btn-primary" collection="Posts" operation="insert"}}
+      Make Your Post
+{{/afModal}}
+</template>
+
+
+<template name="posts">
+     <section id="posts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-push-1">
+                        <div class="post-filtering">
+                            <div class="post">
+    <!-- each posts here -->
+						<!-- {{#each}} -->
+                                <div class="row post_row">
+                                	<div class="col-md-2 col-xs-2">
+                                	<!-- avatar here -->
+                                        <div class="post-person">
+                                            <img src="img/93.jpg" alt="" class="img-responsive">
+                                        </div>
+                                       <p style="text-align:center">username</p>
+                                    </div>
+                                	<!-- end avatar here -->
+
+                                    <div class="col-md-10  col-xs-10">
+                                        <div class="post-comment">
+                                            <h3>“I love Oleose, I highly recommend it, Everyone Try It Now” {{post}}</h3>
+                                            <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="#"><i class="fa fa-mail-forward"> reply</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+						<!-- {{/each}} -->
+    <!-- end posts here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </section>
+</template>

@@ -9,6 +9,12 @@ twbs:bootstrap
 email
 iron:router
 
+yasinuslu:blaze-meta
+aldeed:collection2
+aldeed:autoform
+fortawesome:fontawesome
+ogamedia:timer
+yogiben:autoform-modals
 reywood:iron-router-ga
 useraccounts:bootstrap
 accounts-ui

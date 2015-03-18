@@ -13,11 +13,17 @@
   float: left;
 
   }*/
+  /*@media (min-width: 600) {*/
+    nav.navbar.navbar-default {
+      margin-top: -70px;
+    }
+    header .navbar-default.scrolled {
+      border-bottom: 3px solid #336799;
+      margin-top: -7px !important;
+    }
+    /*}*/
 
-  nav.navbar.navbar-default {
-    margin-top: -70px;
-  }
-  header .navbar-default.scrolled {
-    border-bottom: 3px solid #336799;
-    margin-top: -7px !important;
-  }
+
+    .at-form .at-title, .at-form label{
+      color: #fff;
+    }

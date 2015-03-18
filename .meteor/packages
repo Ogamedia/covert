@@ -10,3 +10,7 @@ email
 iron:router
 
 reywood:iron-router-ga
+useraccounts:bootstrap
+accounts-ui
+accounts-base
+accounts-password

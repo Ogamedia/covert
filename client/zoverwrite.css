@@ -4,3 +4,20 @@
   background-color: rgba(255,255,255,0.7);
   color: black;
 }
+
+/*header .navbar-default.scrolled ul.navbar-nav {
+  margin-top: 30px;
+   padding-top: 15px; 
+}
+.navbar-header.scrolled {
+  float: left;
+
+  }*/
+
+  nav.navbar.navbar-default {
+    margin-top: -70px;
+  }
+  header .navbar-default.scrolled {
+    border-bottom: 3px solid #336799;
+    margin-top: -7px !important;
+  }

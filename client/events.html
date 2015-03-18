@@ -1,9 +1,8 @@
 <template name="events">
 	<h1>Events</h1>
-	{{> insertEventForm}}
+		{{#afModal class="btn btn-primary" collection="Events" operation="insert"}}
+	  Add a new Event
+	{{/afModal}}
 </template>
 
 
-<template name="insertEventForm">
-  {{> quickForm collection="Events" id="insertEventForm" type="insert" template="bootstrap3-inline" label-class="sr-only"}}
-</template>

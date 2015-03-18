@@ -12,5 +12,6 @@ iron:router
 yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
-joshowens:accounts-entry
 fortawesome:fontawesome
+ogamedia:timer
+yogiben:autoform-modals

@@ -9,8 +9,8 @@ twbs:bootstrap
 email
 iron:router
 
-reywood:iron-router-ga
 yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 joshowens:accounts-entry
+fortawesome:fontawesome

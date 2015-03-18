@@ -1,0 +1,126 @@
+/* CSS declarations go here */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #666666;
+}
+
+.post_row {
+	margin-bottom: 0.6%;
+}
+
+body {
+	background-image: url(img/bk-freeze.jpg);
+	font-family: 'Lato', Arial;
+	line-height: 1.42857143;
+}
+
+
+section#posts {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#posts .post-filtering {
+  margin: 20px 0 100px 0;
+}
+section#posts .post-filtering .post .post-person {
+  width: 100%;
+}
+section#posts .post-filtering .post .post-person img {
+  width: 110px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+section#posts .post-filtering .post .post-comment {
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px 40px 20px;
+  position: relative;
+}
+section#posts .post-filtering .post .post-comment h3 {
+  margin-bottom: 15px;
+}
+
+section#posts .post-filtering .post .post-comment p {
+  font-size: 16px;
+  color: #999999;
+}
+
+section#posts .post-filtering .post .post-comment p span {
+  margin-left: 10px;
+}
+
+section#posts .post-filtering .post .post-comment:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 15px;
+  margin-top: -10px;
+}
+
+section#posts .post-filtering .post .post-person,
+section#posts .post-filtering .post .post-comment {
+  float: left;
+}
+section#posts .post-filtering .slick-dots {
+  bottom: -80px;
+}
+section#posts .post-filtering .slick-dots li button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+section#posts .post-filtering .slick-dots li button:before {
+  display: none;
+}
+
+
+section#posts header {
+  color: #ffffff;
+}
+section#posts header h1:after {
+  background: #ffffff;
+}
+section#posts .post-filtering .post .post-person img {
+  border: 3px solid #ffffff;
+}
+section#posts .post-filtering .post .post-comment {
+  background: #ffffff;
+}
+section#posts .post-filtering .post .post-comment h3 {
+  color: #66cdcc;
+}
+section#posts .post-filtering .post .post-comment p span i {
+  color: #66cdcc;
+}
+section#posts .post-filtering .post .post-comment:after {
+  border-right-color: #ffffff;
+}
+section#posts .post-filtering .slick-dots li button {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+section#posts .post-filtering .slick-dots li.slick-active button {
+  background: #66cdcc;
+}

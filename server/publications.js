@@ -16,5 +16,11 @@ Meteor.publish('images', function(){
 });
 
 Meteor.publish('users',function(){
+<<<<<<< HEAD
 	return Meteor.users.find()
 })
+=======
+  return Meteor.users.find()
+})
+
+>>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881

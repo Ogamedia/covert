@@ -73,11 +73,19 @@ Router.map( function () {
 		layoutTemplate: 'userLayout',
 
 		data: function() {
-			var id = this.params._id
+			var id = this.params._id;
+			var ownerId = Posts.findOne(id);
+			console.log(ownerId.poster);
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
+<<<<<<< HEAD
 				occasion: Posts.find().fetch().reverse()
+=======
+				occasion: Posts.findOne(id),
+				owner: 		Meteor.users.findOne(ownerId.poster)
+
+>>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881
 			}
 		}
 	});
@@ -85,11 +93,15 @@ Router.map( function () {
 
 
 AccountsTemplates.configureRoute('signIn', {
-    name: 'signin',
+	name: 'signin',
     // path: '/',
     template: 'home',
     // layoutTemplate: 'myLayout',
     redirect: '/events',
+<<<<<<< HEAD
 });
 
 
+=======
+  });
+>>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881

@@ -13,7 +13,13 @@
   float: left;
 
   }*/
-  /*@media (min-width: 600) {*/
+
+
+  .at-form .at-title, .at-form label{
+    color: #fff;
+  }
+
+  @media (min-width: 768px){
     nav.navbar.navbar-default {
       margin-top: -70px;
     }
@@ -21,9 +27,10 @@
       border-bottom: 3px solid #336799;
       margin-top: -7px !important;
     }
-    /*}*/
-
-
-    .at-form .at-title, .at-form label{
-      color: #fff;
+    .navbar-brand{
+      margin-top: 45px;
     }
+    header .navbar-default.scrolled .navbar-brand {
+      margin-top: 0;
+    }
+  }

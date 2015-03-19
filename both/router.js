@@ -58,7 +58,7 @@ Router.map( function () {
 		data: function() {
 			var id = this.params._id
 			return {
-				id: id,
+				items: Events.findOne(id),
 				occasion: Posts.find({occassion: id}).fetch().reverse()
 			}
 		}
@@ -90,3 +90,15 @@ AccountsTemplates.configureRoute('signIn', {
     // layoutTemplate: 'myLayout',
     redirect: '/events',
 });
+
+
+// Router.onBeforeAction(function(pause) {
+// if (!Meteor.user()) {
+// // pause();
+// alert("you need to be logged-in to view this page, Redirecting you to Home!")
+// Router.go('\home');
+// }
+// else{
+// this.next();
+// }
+// }, {except: ['home','about','jobs', 'dashboard']});

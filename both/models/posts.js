@@ -35,7 +35,7 @@ Posts.attachSchema(new SimpleSchema({
             type: 'fileUpload',
             collection: 'Images'
         },
-        label: 'choose file'
+        label: 'choose photo'
     },
 
   createdAt: {

@@ -9,3 +9,9 @@
 	overflow: hidden;
 	}*/
 
+
+.btn.btn-primary {
+color: #2B3F3F;
+border-color: #2B6261;
+background-color: rgb(229, 248, 235);
+}

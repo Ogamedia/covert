@@ -3,6 +3,20 @@
 	{{#afModal class="btn btn-primary" collection="Events" operation="insert"}}
 	  Add a new Event
 	{{/afModal}}
+
+	{{> showEvent}}
 </template>
 
 
+<template name="showEvent">
+	test
+	{{#each items}}
+	<a href="{{pathFor 'event' _id=_id}}">
+	<div class="row">
+		{{name}}
+		{{creator}}
+		{{tm_now createdAt}}
+	</div>
+	</a>
+	{{/each}}
+</template>

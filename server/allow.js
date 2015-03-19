@@ -4,6 +4,15 @@ Emails.allow({
 	}
 });
 
+Posts.allow({
+	insert: function (userId, doc) {
+		return true
+	},
+	remove: function (userId, doc) {
+		return true
+	}
+});
+
 Events.allow({
 	insert: function (userId, doc) {
 		return true
@@ -16,14 +25,6 @@ Events.allow({
 	}
 });
 
-Posts.allow({
-	insert: function (userId, doc) {
-		return true
-	},
-	remove: function (userId, doc) {
-		return true
-	}
-});
 
 Comments.allow({
 	insert: function (userId, doc) {

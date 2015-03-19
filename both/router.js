@@ -24,7 +24,6 @@ Router.route ('/', function(){
 	name: 'home'
 });
 
-
 Router.route ('/event/:_id', function(){
 	this.render('event');
 	name: 'event'
@@ -54,7 +53,7 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				id: id,
-				occasion: Posts.find()
+				occasion: Posts.find({occassion: id})
 			}
 		}
 	});
@@ -70,7 +69,7 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				id: id,
-				comments: Comments.find(),
+				comments: Comments.find({post: id}),
 				occasion: Posts.find()
 			}
 		}

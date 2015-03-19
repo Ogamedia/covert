@@ -5,3 +5,7 @@ Meteor.publish('eventsPage', function () {
 Meteor.publish('eventPage', function () {
 	return Posts.find()
 });
+
+Meteor.publish('comments', function () {
+	return Comments.find();
+});

@@ -16,8 +16,7 @@ fortawesome:fontawesome
 ogamedia:timer
 yogiben:autoform-modals
 useraccounts:bootstrap
-accounts-ui
-accounts-base
+useraccounts:core
 accounts-password
 useraccounts:core
 mizzao:timesync

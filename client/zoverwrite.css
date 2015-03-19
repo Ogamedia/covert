@@ -27,3 +27,12 @@
     .at-form .at-title, .at-form label{
       color: #fff;
     }
+
+    @media (min-width: 768px){
+     .navbar-brand{
+      margin-top: 45px;
+    }
+    header .navbar-default.scrolled .navbar-brand {
+      margin-top: 0;
+    }
+  }

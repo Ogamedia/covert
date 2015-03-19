@@ -25,23 +25,54 @@ Router.route ('/', function(){
 });
 
 
-Router.route ('/events', function(){
-	this.render('events');
-	name: 'events'
-});
-
-Router.route ('/event', function(){
+Router.route ('/event/:_id', function(){
 	this.render('event');
 	name: 'event'
 });
 
-Router.route ('/post', function(){
-	this.render('occasion');
-	name: 'occasion'
+Router.map( function () {
+	this.route('events', {
+		path: '/events',
+		name: 'events',
+		layoutTemplate: 'userLayout',
+
+		data: function() {
+			return {
+				items: Events.find()
+			}
+		}
+	});
 });
 
+Router.map( function () {
+	this.route('event', {
+		path: '/events/:_id',
+		name: 'event',
+		layoutTemplate: 'userLayout',
 
-Router.route ('/events/:id', function(){
-	this.render('events');
-	name: 'events'
+		data: function() {
+			var id = this.params._id
+			return {
+				id: id,
+				occasion: Posts.find()
+			}
+		}
+	});
+});
+
+Router.map( function () {
+	this.route('post', {
+		path: '/post/:_id/',
+		name: 'post',
+		layoutTemplate: 'userLayout',
+
+		data: function() {
+			var id = this.params._id
+			return {
+				id: id,
+				comments: Comments.find(),
+				occasion: Posts.find()
+			}
+		}
+	});
 });

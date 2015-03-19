@@ -1,27 +1,25 @@
 AutoForm.hooks({
   insertPostForm: {
-    formToDoc: function(doc, ss, formId) {
-          // doc.job = Router.current().params._id
-          // return doc
-
-          // get id of event
-          // add it to the doc
-          // return doc
-
-      },
-
-    },
-
-
-    insertCommentForm: {
-    formToDoc: function(doc, ss, formId) {
-          // doc.post = Router.current().params._id
-          // return doc
-
-          // get id of post
-          // add it to the doc
-          // return doc
-      },
-
+    formToDoc: function(doc, template) {
+      doc.occassion = Router.current().params._id
+      console.log(doc);
+      return doc
     }
- })
+  }
+});
+
+
+AutoForm.addHooks(null, {
+  onError: function (operation,error, ss) {
+    alert(error);
+  }
+});
+
+// AutoForm.addHooks('insertCommentsForm', {
+//   formToDoc: function (doc, template) {
+//       console.log(doc);
+//       doc.occassion = Router.current().params._id
+//       console.log(doc);
+//       return doc;
+//   }
+// });

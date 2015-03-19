@@ -74,5 +74,14 @@ Router.map( function () {
 				occasion: Posts.find()
 			}
 		}
-	});
+	}); 	
+});
+
+
+AccountsTemplates.configureRoute('signIn', {
+    name: 'signin',
+    // path: '/',
+    template: 'home',
+    // layoutTemplate: 'myLayout',
+    redirect: '/events',
 });

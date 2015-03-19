@@ -10,4 +10,6 @@ Meteor.publish('comments', function () {
 	return Comments.find();
 });
 
-Meteor.publish('images');
+Meteor.publish('images', function(){
+	return Images.find();
+});

@@ -43,7 +43,7 @@ Router.map( function () {
 
 		data: function() {
 			return {
-				items: Events.find()
+				items: Events.find().fetch().reverse()
 			}
 		}
 	});
@@ -59,7 +59,7 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				id: id,
-				occasion: Posts.find({occassion: id})
+				occasion: Posts.find({occassion: id}).fetch().reverse()
 			}
 		}
 	});
@@ -76,7 +76,7 @@ Router.map( function () {
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
-				occasion: Posts.find()
+				occasion: Posts.find().fetch().reverse()
 			}
 		}
 	}); 	

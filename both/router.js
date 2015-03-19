@@ -7,7 +7,8 @@ loadingTemplate will use a template with loading or a template
 */
 Router.configure({
 	layoutTemplate: 'layout',
-	trackPageView: true
+	trackPageView: true,
+	// waitOn: function(){ return [Meteor.subscribe('users')] }
 	// onBeforeAction: function(){
 	// 	GAnalytics.pageView(this.page);
 	// 	this.next()

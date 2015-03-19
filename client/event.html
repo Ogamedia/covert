@@ -1,19 +1,13 @@
 <template name="event">
 	<h1>Event DETAILS</h1>
-	<h1>{{id}}</h1>
+	
 
 	{{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
       Add a new Post
     {{/afModal}}
 
-
-
-
-
+    {{> posts}}
 </template>
-
-
-
 
 
 
@@ -38,10 +32,14 @@
 
                                     <div class="col-md-10  col-xs-10">
                                         <div class="post-comment">
-                                            <h3>“I love coding, I highly recommend it, Everyone Try It Now” {{post}}</h3>
-                                            <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="#"><i class="fa fa-mail-forward"> reply</i></a>
+                                            <h3>{{post}}</h3>
+                                            {{#with getImage picture}}
+                                                <h1>picture</h1>
+                                                <img src="{{url}}" class="img-responsive" alt="">
+                                            {{/with}}
+                                            <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> reply</i></a>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
 						{{/each}}
     <!-- end posts here -->

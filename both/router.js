@@ -24,6 +24,11 @@ Router.route ('/', function(){
 	name: 'home'
 });
 
+Router.route ('/profile', function(){
+	this.render('profile');
+	name: 'profile'
+});
+
 
 Router.route ('/event/:_id', function(){
 	this.render('event');
@@ -54,7 +59,7 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				id: id,
-				occasion: Posts.find()
+				occasion: Posts.find({occassion: id})
 			}
 		}
 	});
@@ -70,9 +75,18 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				id: id,
-				comments: Comments.find(),
+				comments: Comments.find({post: id}),
 				occasion: Posts.find()
 			}
 		}
-	});
+	}); 	
+});
+
+
+AccountsTemplates.configureRoute('signIn', {
+    name: 'signin',
+    // path: '/',
+    template: 'home',
+    // layoutTemplate: 'myLayout',
+    redirect: '/events',
 });

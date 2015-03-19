@@ -1,7 +1,13 @@
 <template name="post">
-	<h1>Post details</h1>
-	<h1>comments go here</h1>
-	{{#afModal class="btn btn-primary" collection="Comments" operation="insert"}}
-		comment
-	{{/afModal}}
+	<div class="container">
+		{{#afModal class="btn btn-primary" formId="insertCommentForm" collection="Comments" operation="insert"}}
+			comment
+		{{/afModal}}
+		<h1>Post details</h1>
+		<!-- comments show here -->
+		{{#each comments}}
+			{{comment}}
+		{{/each}}
+	</div>
+
 </template>

@@ -1,6 +1,15 @@
 Comments = new Mongo.Collection("comments");
 
 Comments.attachSchema(new SimpleSchema({
+
+  post: {
+    type: String,
+    autoform: {
+      omit: true
+    }
+  },
+
+
   comment: {
     type: String,
     label: "comment",
@@ -29,13 +38,5 @@ Comments.attachSchema(new SimpleSchema({
             return new Date();
         }
     }
-  },
-
-
-   post: {
-        type: String,
-        autoform: {
-            omit: true
-        }
-    }
+  }
 }));

@@ -1,50 +1,51 @@
 <template name="event">
-	<h1>{{items.name}}</h1>
-
-	{{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
-      Add a new Post
-    {{/afModal}}
-
     {{> posts}}
 </template>
 
 
 
 <template name="posts">
-     <section id="posts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-push-1">
-                        <div class="post-filtering">
-                            <div class="post">
-    <!-- each posts here -->
-						{{#each occasion}}
-                                <div class="row post_row">
-                                	<div class="col-md-2 col-xs-2">
-                                	<!-- avatar here -->
-                                        <div class="post-person">
-                                            <img src="/img/maski.jpg" alt="" class="img-responsive">
-                                        </div>
-                                       <p style="text-align:center">{{userName poster}}</p>
-                                    </div>
-                                	<!-- end avatar here -->
-
-                                    <div class="col-md-10  col-xs-10">
-                                        <div class="post-comment">
-                                            <h3>{{post}}</h3>
-                                            {{#with getImage picture}}
-                                                <img src="{{url}}" class="img-responsive" alt="">
-                                            {{/with}}
-                                           <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> comment</i></a>
-                                        </div>
-                                    </div> 
-                                </div>
-						{{/each}}
-    <!-- end posts here -->
-                            </div>
-                        </div>
+   <section id="posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-push-1">
+                <div class="post-filtering">
+                    <div class="post">
+                    <div class="row">
+                        <h1 style="font-style:italic">{{items.name}}</h1>
+                        
+                        {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
+                        Add a new Post
+                        {{/afModal}}
                     </div>
+                        <!-- each posts here -->
+                        {{#each occasion}}
+                        <div class="row post_row">
+                           <div class="col-md-2 col-xs-2">
+                               <!-- avatar here -->
+                               <div class="post-person">
+                                <img src="/img/maski.jpg" alt="" class="img-responsive">
+                            </div>
+                            <p style="text-align:center">{{userName poster}}</p>
+                        </div>
+                        <!-- end avatar here -->
+
+                        <div class="col-md-10  col-xs-10">
+                            <div class="post-comment">
+                                <h3>{{post}}</h3>
+                                {{#with getImage picture}}
+                                <img src="{{url}}" class="img-responsive" alt="">
+                                {{/with}}
+                                <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> comment</i></a>
+                            </div>
+                        </div> 
+                    </div>
+                    {{/each}}
+                    <!-- end posts here -->
                 </div>
             </div>
-     </section>
+        </div>
+    </div>
+</div>
+</section>
 </template>

@@ -13,7 +13,6 @@
 
 <template name="showEvent">
 	<div class="container">
-	test
     <ul class="card-list">
 	{{#each items}}
 
@@ -26,10 +25,9 @@
                     {{#with getImage picture}}
                    		 <img src="{{url}}" class="img-responsive" alt="">
                     {{/with}}
-                    <span class="card-title">{{name}}</span>
                 </div>
                 <div class="card-content">
-                    <p><a href="{{pathFor 'event' _id=_id}}" style="text-decoration:none">See More</a></p>
+                    <span class="card-title">{{name}}</span><p><a href="{{pathFor 'event' _id=_id}}" style="text-decoration:none">See More</a></p>
                 </div>
             </div>
             </a>

@@ -16,8 +16,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">about</a>
-          </li>
+          <li><a href="#about">about</a></li>
+          <li><a href="/events">events</a></li>
           <li><a href="#support">support</a>
           </li>
           <li><a id="logout"><i class="fa fa-sign-out"></i></a></li>
@@ -49,9 +49,14 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/">Home</a>
           </li>
-          <li><a href="#support">Events</a>
+          <li><a href="/events">Events</a>
           </li>
-          <li><a id="logout"><i class="fa fa-sign-out"></i>logout</a></li>
+          {{#if currentUser}}
+            <li><a id="logout"><i class="fa fa-sign-out"></i>logout</a></li>
+          {{else}}
+            <li><a id="logout"><i class="fa fa-sign-out"></i>login</a></li>
+          {{/if}}
+        
         </ul>
       </div>
       <!-- /.navbar-collapse -->

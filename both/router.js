@@ -80,7 +80,7 @@ Router.map( function () {
 				occasion: Posts.find().fetch().reverse()
 			}
 		}
-	}); 	
+	});
 });
 
 
@@ -93,13 +93,3 @@ AccountsTemplates.configureRoute('signIn', {
 });
 
 
-// Router.onBeforeAction(function(pause) {
-// if (!Meteor.user()) {
-// // pause();
-// alert("you need to be logged-in to view this page, Redirecting you to Home!")
-// Router.go('\home');
-// }
-// else{
-// this.next();
-// }
-// }, {except: ['home','about','jobs', 'dashboard']});

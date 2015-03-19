@@ -20,3 +20,9 @@ accounts-ui
 accounts-base
 accounts-password
 useraccounts:core
+mizzao:timesync
+
+
+yogiben:autoform-file
+cfs:standard-packages
+cfs:gridfs

@@ -28,6 +28,16 @@ Posts.attachSchema(new SimpleSchema({
     }
   },
 
+  picture: {
+        type: String,
+        optional: true,
+        autoform: {
+            type: 'fileUpload',
+            collection: 'Images'
+        },
+        label: 'choose file'
+    },
+
   createdAt: {
     type: Date,
     label: 'Date',

@@ -9,3 +9,5 @@ Meteor.publish('eventPage', function () {
 Meteor.publish('comments', function () {
 	return Comments.find();
 });
+
+Meteor.publish('images');

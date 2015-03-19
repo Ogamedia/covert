@@ -14,3 +14,9 @@ Template.launchPage.events({
 	}
 })
 
+
+
+Template.registerHelper('getImage',function(_id){
+  console.log(Images.findOne(_id));
+  return Images.findOne(_id);
+});

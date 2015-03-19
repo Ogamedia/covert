@@ -11,3 +11,7 @@ Meteor.publish('comments', function () {
 });
 
 Meteor.publish('images');
+
+Meteor.publish('users',function(){
+	return Meteor.users.find()
+})

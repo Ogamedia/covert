@@ -24,6 +24,12 @@ Router.route ('/', function(){
 	name: 'home'
 });
 
+Router.route ('/profile', function(){
+	this.render('profile');
+	name: 'profile'
+});
+
+
 Router.route ('/event/:_id', function(){
 	this.render('event');
 	name: 'event'

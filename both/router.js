@@ -25,11 +25,6 @@ Router.route ('/', function(){
 });
 
 
-// Router.route ('/events', function(){
-// 	this.render('events');
-// 	name: 'events'
-// });
-
 Router.route ('/event/:_id', function(){
 	this.render('event');
 	name: 'event'
@@ -40,12 +35,6 @@ Router.map( function () {
 		path: '/events',
 		name: 'events',
 		layoutTemplate: 'userLayout',
-
-		// waitOn: function(){
-		// 	var pass = this.params._id;
-		// 	return [
-		// 		Meteor.subscribe('users', pass)			]
-		// },
 
 		data: function() {
 			return {
@@ -61,12 +50,6 @@ Router.map( function () {
 		name: 'event',
 		layoutTemplate: 'userLayout',
 
-		// waitOn: function(){
-		// 	var pass = this.params._id;
-		// 	return [
-		// 		Meteor.subscribe('users', pass)			]
-		// },
-
 		data: function() {
 			var id = this.params._id
 			return {
@@ -77,3 +60,19 @@ Router.map( function () {
 	});
 });
 
+Router.map( function () {
+	this.route('post', {
+		path: '/post/:_id/',
+		name: 'post',
+		layoutTemplate: 'userLayout',
+
+		data: function() {
+			var id = this.params._id
+			return {
+				id: id,
+				comments: Comments.find(),
+				occasion: Posts.find()
+			}
+		}
+	});
+});

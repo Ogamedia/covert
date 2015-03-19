@@ -1,12 +1,12 @@
-// AutoForm.hooks({
-//   insertPostForm: {
-//     formToDoc: function(doc, template) {
-//       doc.occassion = Router.current().params._id
-//       console.log(doc);
-//       return doc
-//     }
-//   }
-// });
+AutoForm.hooks({
+  insertPostForm: {
+    formToDoc: function(doc, template) {
+      doc.occassion = Router.current().params._id
+      console.log(doc);
+      return doc
+    }
+  }
+});
 
 
 AutoForm.addHooks(null, {
@@ -15,10 +15,11 @@ AutoForm.addHooks(null, {
   }
 });
 
-AutoForm.addHooks('insertPostForm', {
-  formToDoc: function (doc, template) {
-      console.log(doc);
-      doc.occassion = Router.current().params._id
-      console.log(doc);
-  }
-});
+// AutoForm.addHooks('insertCommentsForm', {
+//   formToDoc: function (doc, template) {
+//       console.log(doc);
+//       doc.occassion = Router.current().params._id
+//       console.log(doc);
+//       return doc;
+//   }
+// });

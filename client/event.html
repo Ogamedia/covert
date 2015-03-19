@@ -2,11 +2,14 @@
 	<h1>Event DETAILS</h1>
 	<h1>{{id}}</h1>
 
-	{{#afModal  class="btn btn-primary" collection="Posts" id="insertPostForm" operation="insert"}}
+	{{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
       Add a new Post
     {{/afModal}}
 
-	{{> posts}}
+
+
+
+
 </template>
 
 
@@ -22,7 +25,7 @@
                         <div class="post-filtering">
                             <div class="post">
     <!-- each posts here -->
-						<!-- {{#each}} -->
+						{{#each occasion}}
                                 <div class="row post_row">
                                 	<div class="col-md-2 col-xs-2">
                                 	<!-- avatar here -->
@@ -40,7 +43,7 @@
                                         </div>
                                     </div>
                                 </div>
-						<!-- {{/each}} -->
+						{{/each}}
     <!-- end posts here -->
                             </div>
                         </div>

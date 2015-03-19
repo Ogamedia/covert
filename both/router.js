@@ -72,14 +72,14 @@ Router.map( function () {
 		layoutTemplate: 'userLayout',
 
 		data: function() {
-			var id = this.params._id
-			var ownerId=		Posts.findOne(id).poster;
-			console.log( Posts.findOne(id))
+			var id = this.params._id;
+			var ownerId = Posts.findOne(id);
+			console.log(ownerId);
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
 				occasion: Posts.findOne(id),
-				owner: 		Meteor.users.findOne(ownerId)
+				// owner: 		Meteor.users.findOne(ownerId)
 
 			}
 		}

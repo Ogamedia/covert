@@ -13,7 +13,7 @@
 
 
 <template name="posts">
- <section id="posts">
+   <section id="posts">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-push-1">
@@ -22,12 +22,12 @@
                         <!-- each posts here -->
                         {{#each occasion}}
                         <div class="row post_row">
-                         <div class="col-md-2 col-xs-2">
-                             <!-- avatar here -->
-                             <div class="post-person">
+                           <div class="col-md-2 col-xs-2">
+                               <!-- avatar here -->
+                               <div class="post-person">
                                 <img src="" alt="" class="img-responsive">
                             </div>
-                            <p style="text-align:center">username</p>
+                            <p style="text-align:center">{{userName poster}}</p>
                         </div>
                         <!-- end avatar here -->
 
@@ -43,7 +43,7 @@
                         </div> 
                     </div>
                     {{/each}}
-                    <!-- end posts here -->
+                    <!-- end posts here -->                          
                 </div>
             </div>
         </div>

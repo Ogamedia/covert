@@ -1,10 +1,4 @@
-/*
-router style, initial configuration template
-layoutTemplate will map to a layout template
-notFoundTemplate will use a template named 404 or a name of your choice if you chose to change it
-loadingTemplate will use a template with loading or a template
 
-*/
 Router.configure({
 	layoutTemplate: 'layout',
 	trackPageView: true,
@@ -75,17 +69,12 @@ Router.map( function () {
 		data: function() {
 			var id = this.params._id;
 			var ownerId = Posts.findOne(id);
-			console.log(ownerId.poster);
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
-<<<<<<< HEAD
-				occasion: Posts.find().fetch().reverse()
-=======
-				occasion: Posts.findOne(id),
-				owner: 		Meteor.users.findOne(ownerId.poster)
+				occasion: Posts.find().fetch().reverse(),
+				owner: Meteor.users.findOne(ownerId.poster)
 
->>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881
 			}
 		}
 	});
@@ -94,14 +83,12 @@ Router.map( function () {
 
 AccountsTemplates.configureRoute('signIn', {
 	name: 'signin',
-    // path: '/',
     template: 'home',
-    // layoutTemplate: 'myLayout',
     redirect: '/events',
-<<<<<<< HEAD
 });
 
-
-=======
-  });
->>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881
+AccountsTemplates.configureRoute('signUp', {
+	name: 'signup',
+    template: 'home',
+    redirect: '/events',
+});

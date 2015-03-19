@@ -73,11 +73,15 @@ Router.map( function () {
 		layoutTemplate: 'userLayout',
 
 		data: function() {
-			var id = this.params._id
+			var id = this.params._id;
+			var ownerId = Posts.findOne(id);
+			console.log(ownerId.poster);
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
-				occasion: Posts.find()
+				occasion: Posts.findOne(id),
+				owner: 		Meteor.users.findOne(ownerId.poster)
+
 			}
 		}
 	}); 	
@@ -85,9 +89,9 @@ Router.map( function () {
 
 
 AccountsTemplates.configureRoute('signIn', {
-    name: 'signin',
+	name: 'signin',
     // path: '/',
     template: 'home',
     // layoutTemplate: 'myLayout',
     redirect: '/events',
-});
+  });

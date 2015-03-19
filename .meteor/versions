@@ -68,7 +68,7 @@ mpowaga:string-template@0.1.0
 mrt:moment@2.8.1
 npm-bcrypt@0.7.8_1
 observe-sequence@1.0.5
-ogamedia:timer@0.0.2
+ogamedia:timer@0.0.3
 ordered-dict@1.0.3
 raix:eventemitter@0.1.1
 raix:handlebar-helpers@0.2.4

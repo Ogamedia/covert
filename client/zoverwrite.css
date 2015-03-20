@@ -33,6 +33,9 @@
     header .navbar-default.scrolled .navbar-brand {
       margin-top: 0;
     }
+    .container.main {
+      margin-top: -39px;
+    }
   }
 
 

@@ -1,5 +1,5 @@
 Template.registerHelper('getImage',function(_id){
-  return Images.findOne(_id);
+	return Images.findOne(_id);
 });
 
 // Template.launchPage.events({

@@ -12,7 +12,7 @@
 
 
 <template name="showEvent">
-	<div class="container">
+	<div class>
     <ul class="card-list">
 	{{#each items}}
 
@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-image">
                     {{#with getImage picture}}
-                   		 <img src="{{url}}" class="img-responsive" alt="">
+                   		 <img src="{{url}}" class="img-responsive" style="height:420px>" alt="">
                     {{/with}}
                 </div>
                 <div class="card-content">

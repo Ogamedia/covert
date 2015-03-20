@@ -10,3 +10,14 @@ Template.launchPage.events({
 		Meteor.call('emailer',  email, "covertgrp@gmail.com", name, email );
 	}
 });
+
+
+Template.posts.helpers({
+	noPost: function (counter) {
+		if (counter > 0) {
+			return false
+		}else{
+			return true
+		};
+	}
+});

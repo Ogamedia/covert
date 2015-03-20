@@ -14,8 +14,14 @@
                     <div class="row">
                         <strong><h1 style="font-style:italic">{{items.name}}</h1></strong>
                         {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
-                        Add a new Post
+                             Add a new Post
                         {{/afModal}}
+                    </div>
+
+                    <div class="row ">
+                        {{#if noPost counter}}
+                            Be the first to post about this event
+                        {{/if}}
                     </div>
 
                         <!-- each posts here -->

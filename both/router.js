@@ -54,7 +54,8 @@ Router.map( function () {
 			var id = this.params._id
 			return {
 				items: Events.findOne(id),
-				occasion: Posts.find({occassion: id}).fetch().reverse()
+				occasion: Posts.find({occassion: id}).fetch().reverse(),
+				counter: Posts.find({occassion: id}).count()
 			}
 		}
 	});

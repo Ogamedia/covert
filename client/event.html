@@ -12,21 +12,25 @@
                 <div class="post-filtering">
                     <div class="post">
                         <div class="row">
-                            <h1 style="font-style:italic">{{items.name}}</h1>
-                            
+                            <strong><h1 style="font-style:italic">{{items.name}}</h1></strong>
                             {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
                             Add a new Post
                             {{/afModal}}
                         </div>
 
+                        <div class="row ">
+                            {{#if noPost counter}}
+                            Be the first to post about this event
+                            {{/if}}
+                        </div>
+
                         <!-- each posts here -->
                         {{#each occasion}}
                         <div class="row post_row">
-                         <div class="col-md-2 col-xs-2">
-                             <!-- avatar here -->
-                             <div class="post-person">
-
-                                <img src="" alt="" class="img-responsive">
+                           <div class="col-md-2 col-xs-2">
+                               <!-- avatar here -->
+                               <div class="post-person">
+                                <img src="/img/maski.jpg" alt="" class="img-responsive">
 
                             </div>
                             <p style="text-align:center">{{userName poster}}</p>
@@ -37,13 +41,12 @@
                             <div class="post-comment">
                                 <h3>{{post}}</h3>
                                 {{#with getImage picture}}
-
-                                <h1>picture</h1>
                                 <img src="{{url}}" class="img-responsive" alt="">
                                 {{/with}}
-                                <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward">comment</i></a>
+                                <h5>{{tm_now createdAt}}</h5>
+                                <!--      <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> comment</i></a> -->
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     {{/each}}
                 </div>

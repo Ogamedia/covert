@@ -23,3 +23,4 @@ yogiben:autoform-file
 cfs:standard-packages
 cfs:gridfs
 joshowens:accounts-entry
+accounts-ui

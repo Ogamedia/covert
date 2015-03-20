@@ -11,3 +11,4 @@ Template.navbar.events({
    });
 },
 });
+

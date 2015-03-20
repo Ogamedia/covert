@@ -22,11 +22,6 @@
           {{/if}}
           <li><a href="#support">support</a>
           </li>
-          {{#if currentUser}}
-            <li><a class="logout"><i class="fa fa-sign-out"></i>logout</a></li>
-          {{else}}
-            <li><a class="login"><i class="fa fa-sign-out"></i>login</a></li>
-          {{/if}}
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -57,11 +52,11 @@
           </li>
           <li><a href="/events">Events</a>
           </li>
-          {{#if currentUser}}
-            <li><a class="logout"><i class="fa fa-sign-out"></i>logout</a></li>
+          <!-- {{#if currentUser}}
+            <li><a id="logout"><i class="fa fa-sign-out"></i>logout</a></li>
           {{else}}
-            <li><a class="login"><i class="fa fa-sign-out"></i>login</a></li>
-          {{/if}}
+            <li><a id="logout"><i class="fa fa-sign-out"></i>login</a></li>
+          {{/if}} -->
         
         </ul>
       </div>

@@ -81,14 +81,14 @@ Router.map( function () {
 });
 
 
-AccountsTemplates.configureRoute('signIn', {
-	name: 'signin',
-    template: 'home',
-    redirect: '/events',
-});
+// AccountsTemplates.configureRoute('signIn', {
+// 	name: 'signin',
+//     template: 'home',
+//     redirect: '/events',
+// });
 
-AccountsTemplates.configureRoute('signUp', {
-	name: 'signup',
-    template: 'home',
-    redirect: '/events',
-});
+// AccountsTemplates.configureRoute('signUp', {
+// 	name: 'signup',
+//     template: 'home',
+//     redirect: '/events',
+// });

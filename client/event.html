@@ -5,39 +5,43 @@
 
 
 <template name="posts">
- <section id="posts">
-    <div class="container">
+   <section id="posts">
+       <div class="container main">
         <div class="row">
+            <div class="row ">
+            </div>
             <div class="col-md-8 col-md-push-1">
                 <div class="post-filtering">
                     <div class="post">
                         <div class="row">
-                            <div class="row ">
+                            <div class="col-lg-12 text-center">
                                 {{#if noPost counter}}
                                 <h4>Be the first to post about this event</h4>
                                 {{/if}}
+                                <strong><h3 style="font-style:italic">{{items.name}}</h3></strong>
                             </div>
-                            <strong><h1 style="font-style:italic">{{items.name}}</h1></strong>
                            <!--  {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
                             Add a new Post
                             {{/afModal}} -->
-
-                            {{> quickForm collection="Posts" id="insertPostForm" type="insert"}}
+                            <div class="col-lg-12">
+                                {{> quickForm collection="Posts" id="insertPostForm" type="insert"}}
+                            </div>
+                            <br><br><br>
                         </div>
 
-                    <div class="row">
-                        {{#if noPost counter}}
+                        <div class="row">
+                            {{#if noPost counter}}
                             Be the first to post about this event
-                        {{/if}}
-                    </div>
+                            {{/if}}
+                        </div>
 
 
                         <!-- each posts here -->
                         {{#each occasion}}
                         <div class="row post_row">
-                           <div class="col-md-2 col-xs-2">
-                               <!-- avatar here -->
-                               <div class="post-person">
+                         <div class="col-md-2 col-xs-2">
+                             <!-- avatar here -->
+                             <div class="post-person">
                                 <img src="/img/maski.jpg" alt="" class="img-responsive">
 
                             </div>

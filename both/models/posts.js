@@ -14,7 +14,10 @@ Posts.attachSchema(new SimpleSchema({
     optional: true,
     max: 140,
     autoform: {
-      rows: 2
+      rows: 2,
+      afFieldInput: {
+        placeholder: "Type your anonymous post"
+      }
     }
   },
 

@@ -79,13 +79,9 @@ Router.map( function () {
 			return {
 				id: id,
 				comments: Comments.find({post: id}),
-<<<<<<< HEAD
-				occasion: Posts.find().fetch().reverse()
-=======
 				occasion: Posts.findOne(id),
 				owner: 		Meteor.users.findOne(ownerId.poster)
 
->>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881
 			}
 		}
 	});
@@ -98,10 +94,4 @@ AccountsTemplates.configureRoute('signIn', {
     template: 'home',
     // layoutTemplate: 'myLayout',
     redirect: '/events',
-<<<<<<< HEAD
-});
-
-
-=======
   });
->>>>>>> c13cf658407f48edbe3be5e62b0e8e22c32e6881

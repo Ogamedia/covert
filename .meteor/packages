@@ -9,21 +9,23 @@ twbs:bootstrap
 
 email
 iron:router
-aldeed:collection2
-aldeed:autoform
+
 
 fortawesome:fontawesome
 ogamedia:timer
-yogiben:autoform-modals
 
 useraccounts:bootstrap
 useraccounts:core
 accounts-password
+joshowens:accounts-entry
+accounts-ui
+
 mizzao:timesync
 
-
+aldeed:collection2
+aldeed:autoform
+yogiben:autoform-modals
 yogiben:autoform-file
 cfs:standard-packages
 cfs:gridfs
-joshowens:accounts-entry
-accounts-ui
+

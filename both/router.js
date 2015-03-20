@@ -93,3 +93,4 @@ Router.map( function () {
 //     template: 'home',
 //     redirect: '/events',
 // });
+

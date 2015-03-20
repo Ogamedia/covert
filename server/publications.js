@@ -16,6 +16,5 @@ Meteor.publish('images', function(){
 });
 
 Meteor.publish('users',function(){
-	return Meteor.users.find()
+	return Meteor.users.find();
 })
-

@@ -14,7 +14,7 @@ Posts.attachSchema(new SimpleSchema({
     optional: true,
     max: 140,
     autoform: {
-      rows: 5
+      rows: 2
     }
   },
 
@@ -29,14 +29,14 @@ Posts.attachSchema(new SimpleSchema({
   },
 
   picture: {
-        type: String,
-        optional: true,
-        autoform: {
-            type: 'fileUpload',
-            collection: 'Images'
-        },
-        label: 'choose photo'
+    type: String,
+    optional: true,
+    autoform: {
+      type: 'fileUpload',
+      collection: 'Images'
     },
+    label: 'choose photo'
+  },
 
   createdAt: {
     type: Date,

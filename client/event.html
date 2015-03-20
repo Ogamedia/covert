@@ -5,24 +5,34 @@
 
 
 <template name="posts">
-   <section id="posts">
+ <section id="posts">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-push-1">
                 <div class="post-filtering">
                     <div class="post">
-                    <div class="row">
-                        <strong><h1 style="font-style:italic">{{items.name}}</h1></strong>
-                        {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
-                             Add a new Post
-                        {{/afModal}}
-                    </div>
+                        <div class="row">
+                            <div class="row ">
+                                {{#if noPost counter}}
+                                <h4>Be the first to post about this event</h4>
+                                {{/if}}
+                            </div>
+                            <strong><h1 style="font-style:italic">{{items.name}}</h1></strong>
+                           <!--  {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
+                            Add a new Post
+                            {{/afModal}} -->
 
+                            {{> quickForm collection="Posts" id="insertPostForm" type="insert"}}
+                        </div>
+
+<<<<<<< HEAD
                     <div class="row">
                         {{#if noPost counter}}
                             Be the first to post about this event
                         {{/if}}
                     </div>
+=======
+>>>>>>> 774ed602cae4f77ffa7d9294d20cf9cb2c7ba038
 
                         <!-- each posts here -->
                         {{#each occasion}}
@@ -41,15 +51,14 @@
                             <div class="post-comment">
                                 <h3>{{post}}</h3>
                                 {{#with getImage picture}}
-                                    <img src="{{url}}" class="img-responsive" alt="">
+                                <img src="{{url}}" class="img-responsive" alt="">
                                 {{/with}}
                                 <h5>{{tm_now createdAt}}</h5>
-                               <!--      <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> comment</i></a> -->
+                                <!--      <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> comment</i></a> -->
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     {{/each}}
-
                 </div>
             </div>
         </div>

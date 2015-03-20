@@ -8,8 +8,6 @@ meteor-platform
 twbs:bootstrap
 email
 iron:router
-
-yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 fortawesome:fontawesome
@@ -24,3 +22,5 @@ mizzao:timesync
 yogiben:autoform-file
 cfs:standard-packages
 cfs:gridfs
+joshowens:accounts-entry
+accounts-ui

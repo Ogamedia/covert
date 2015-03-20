@@ -9,3 +9,19 @@
 	overflow: hidden;
 	}*/
 
+
+.btn.btn-primary {
+color: #2B3F3F;
+border-color: #2B6261;
+background-color: rgb(229, 248, 235);
+}
+
+
+#at-signUp {
+color: #2B3F3F;
+border-color: #f89406;
+background-color: rgb(248, 46, 46);
+/* height: 128px; */
+border-radius: 29px;
+padding: 10px;
+}

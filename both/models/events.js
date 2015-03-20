@@ -17,6 +17,15 @@ Events.attachSchema(new SimpleSchema({
             return Meteor.userId();
         }
     },
+     picture: {
+        type: String,
+        optional: true,
+        autoform: {
+            type: 'fileUpload',
+            collection: 'Images'
+        },
+        label: 'choose picture'
+    },
 
   createdAt: {
         type: Date,

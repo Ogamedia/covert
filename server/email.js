@@ -14,6 +14,6 @@ Meteor.methods({
 	}
 });
 
-// Meteor.startup(function () {
-// 	process.env.MAIL_URL = smtp://USERNAME:PASSWORD@smtp.google.com:587/
-// }
+Meteor.startup(function () {
+	process.env.MAIL_URL = 'smtp://covertgrp@gmail.com:OgaAnimBan@smtp.google.com:465'
+})

@@ -129,3 +129,7 @@ section#posts .post-filtering .slick-dots li.slick-active button {
   margin: 0.6%;
   padding: 2%;
 }
+
+.card .card-content {
+background: rgb(43, 98, 97);
+}

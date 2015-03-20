@@ -10,7 +10,7 @@ Posts.attachSchema(new SimpleSchema({
   
   post: {
     type: String,
-    label: "Post",
+    label: "Post your viewpoint",
     optional: true,
     max: 140,
     autoform: {

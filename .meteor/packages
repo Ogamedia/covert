@@ -6,13 +6,16 @@
 
 meteor-platform
 twbs:bootstrap
+
 email
 iron:router
 aldeed:collection2
 aldeed:autoform
+
 fortawesome:fontawesome
 ogamedia:timer
 yogiben:autoform-modals
+
 useraccounts:bootstrap
 useraccounts:core
 accounts-password

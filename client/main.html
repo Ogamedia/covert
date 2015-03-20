@@ -32,8 +32,12 @@
 
 		<div class="col-md-4 signmargin">
 			<div class="">
+			{{#if currentUser}}
+			{{else}}
 				<a href="/sign-up" class="btn btn-large btn-warning">SIGN UP</a>
 				<a href="/sign-in" class="btn btn-large btn-primary">SIGN IN</a>
+			{{/if}}
+
 			</div>
 		</div>
 

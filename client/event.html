@@ -11,13 +11,23 @@
             <div class="col-md-8 col-md-push-1">
                 <div class="post-filtering">
                     <div class="post">
+                        <div class="row">
+                            <h1 style="font-style:italic">{{items.name}}</h1>
+                            
+                            {{#afModal  class="btn btn-primary" collection="Posts" formId="insertPostForm" operation="insert"}}
+                            Add a new Post
+                            {{/afModal}}
+                        </div>
+
                         <!-- each posts here -->
                         {{#each occasion}}
                         <div class="row post_row">
                          <div class="col-md-2 col-xs-2">
                              <!-- avatar here -->
                              <div class="post-person">
+
                                 <img src="" alt="" class="img-responsive">
+
                             </div>
                             <p style="text-align:center">{{userName poster}}</p>
                         </div>
@@ -27,15 +37,15 @@
                             <div class="post-comment">
                                 <h3>{{post}}</h3>
                                 {{#with getImage picture}}
+
                                 <h1>picture</h1>
                                 <img src="{{url}}" class="img-responsive" alt="">
                                 {{/with}}
-                                <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward"> reply</i></a>
+                                <a href=""><i class="fa fa-heart-o"> like</i></a> <a href="{{pathFor 'post' _id=_id}}"><i class="fa fa-mail-forward">comment</i></a>
                             </div>
                         </div> 
                     </div>
                     {{/each}}
-                    <!-- end posts here -->                          
                 </div>
             </div>
         </div>

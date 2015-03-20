@@ -41,7 +41,7 @@ h6,
 .h6 {
   color: #666666;
 }
-header .navbar-default {
+/*header .navbar-default {
   background: none;
   border: none;
   padding-top: 40px;
@@ -137,7 +137,7 @@ header .navbar-default.scrolled .navbar-brand img {
 }
 header .navbar-default.scrolled ul.navbar-nav {
   padding-top: 15px;
-}
+}*/
 .scrollpoint {
   opacity: 0;
 }

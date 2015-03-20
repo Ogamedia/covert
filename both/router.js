@@ -1,6 +1,6 @@
 
 Router.configure({
-	layoutTemplate: 'layout',
+	layoutTemplate: 'userLayout',
 	trackPageView: true,
 	// waitOn: function(){ return [Meteor.subscribe('users')] }
 	// onBeforeAction: function(){

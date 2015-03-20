@@ -12,10 +12,20 @@
 </head>
 <template name="home">
 	<body>
-		<!-- {{>launchPage}} -->
-		<div>
-			Our home
+		<div class="container">
+			{{> homeElements}}
 		</div>
 	</body>
+</template>
+
+
+<template name="homeElements">
+	<div class="container col-md-7 col-lg-7 col-md-offset-2 col-lg-offset-2">
+		<h1> Chat anonymously at events.</h1>
+		<div class="col-md-offset-5 col-md-offset-5">
+			<a href="/sign-up" class="btn btn-large btn-warning">SIGN UP</a>
+			<a href="/sign-in" class="btn btn-large btn-primary">SIGN IN</a>
+		</div>
+	</div>
 </template>
 

@@ -25,3 +25,17 @@ background-color: rgb(248, 46, 46);
 border-radius: 29px;
 padding: 10px;
 }
+
+
+nav.navbar.navbar-default {
+margin-top: 0px;
+}
+
+
+@media (min-width: 760px) {
+  nav.navbar.navbar-default {
+    margin-top: 0px;
+    }
+}
+
+body { padding-top: 70px; }

@@ -19,7 +19,7 @@ Events.attachSchema(new SimpleSchema({
     },
      picture: {
         type: String,
-        optional: true,
+        optional: false,
         autoform: {
             type: 'fileUpload',
             collection: 'Images'

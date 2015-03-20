@@ -1,5 +1,13 @@
+.bgcontent{
 
-
+	background: url(/img/backgroundAn.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 730px;
+	overflow: hidden;
+}
 
 .btn.btn-primary {
 color: #2B3F3F;
@@ -29,4 +37,15 @@ margin-top: 0px;
     }
 }
 
-body { padding-top: 70px; }
+body { 
+	padding-top: 70px;
+	/*overflow: hidden;*/
+ }
+
+.transparent{
+	margin-top: 13%;
+}
+
+.signmargin{
+	margin-top: 13%;
+}

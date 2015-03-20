@@ -15,29 +15,43 @@
 </script>
 </head>
 <template name="home">
-	<body
-	style="
-	background: url(/img/backgroundAn.jpg); 
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachement: fixed;
-	font-family: Roboto, sans-serif;
-	font-size: 16px;">
-  <div class="container">
-   {{> homeElements}}
+	<div class="bgcontent">
+		<div class="container">
+			{{> homeElements}}
+   </div>
  </div>
-</body>
 </template>
 
 
 <template name="homeElements">
-	<div class="container col-md-7 col-lg-7 col-md-offset-2 col-lg-offset-2">
-		<h1> Chat anonymously at events.</h1>
-		<div class="col-md-offset-5 col-md-offset-5">
-			<a href="/sign-up" class="btn btn-large btn-warning">SIGN UP</a>
-			<a href="/sign-in" class="btn btn-large btn-primary">SIGN IN</a>
-		</div>
-	</div>
+	<!-- <div class="container col-md-7 col-lg-7 col-md-offset-2 col-lg-offset-2"> -->
+	<div class="row">
+		<div class="col-md-4">
+      &nbsp;
+    </div>
+
+    <div class="col-md-4 signmargin">
+     <div class="">
+       {{#if currentUser}}
+       {{else}}
+       <a href="/sign-up" class="btn btn-large btn-warning">SIGN UP</a>
+       <a href="/sign-in" class="btn btn-large btn-primary">SIGN IN</a>
+       {{/if}}
+
+     </div>
+   </div>
+
+   <div class="col-md-4 col-sm-4">
+     <div class="panel panel-default transparent">
+      <div class="panel-body format">
+       <h1>Express yourself <strong>anonymously</strong> and connect with like minded people at any event</h1>
+       <h3>Sign-up now to see what other <strong>Coverts</strong> and <strong>Covertress</strong> are posting</h3>
+     </div>
+
+   </div>
+
+ </div>
+ <!-- </div> -->
+</div>
 </template>
 

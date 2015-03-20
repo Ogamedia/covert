@@ -56,13 +56,12 @@
             <li><a id="logout"><i class="fa fa-sign-out"></i>logout</a></li>
           {{else}}
             <li><a id="logout"><i class="fa fa-sign-out"></i>login</a></li>
-            {{/if}} -->
 
+            {{/if}} -->
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
+        <!-- /.container-->
       </div>
-      <!-- /.container-->
     </nav>
   </template>
 
@@ -84,15 +83,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Covert<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="/"><img src="/img/covert.png"><span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             {{#if currentUser}}
             <li><a href="/events">Events</a></li>
-            <li><a href="/sign-out">sign out</a></li>
+            <li><a href="/sign-out">Sign out</a></li>
             {{else}}
-            <li><a href="/sign-in">login in</a></li>
-            <li><a href="/sign-up">Sign Up</a></li>
+            <li><a href="/sign-in">Sign In</a></li>
+            <li><a href="/sign-up" style="background-color: orange;">Sign Up</a></li>
             {{/if}}
           </ul>
         </div><!-- /.navbar-collapse -->

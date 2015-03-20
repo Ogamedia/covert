@@ -1,10 +1,32 @@
 <template name="comments">
   <section id="comments">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-push-1">
+      
+
+      <div class="review">
+        <div class="row">
           {{#each comments}}
-          comment
+          
+          <div class="col-md-2">
+            <div class="review-person">
+              <img src="http://api.randomuser.me/portraits/women/94.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="review-comment">
+              <h3>comment</h3>
+              <p>
+                - Krin Fox
+                <span>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star-o fa-lg"></i>
+                </span>
+              </p>
+            </div>
+          </div>
           {{/each}}
         </div>
       </div>
